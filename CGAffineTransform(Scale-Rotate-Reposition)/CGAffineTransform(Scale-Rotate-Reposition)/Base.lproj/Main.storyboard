@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="faL-wp-m99">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="Bqt-Gv-9Hv">
+            <objects>
+                <viewController id="faL-wp-m99" customClass="ViewController" customModule="CGAffineTransform_Scale_Rotate_Reposition_" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="L79-kh-EMt">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="diniIn" translatesAutoresizingMaskIntoConstraints="NO" id="hba-ER-Zzh">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="m6g-yY-zGK">
+                                <rect key="frame" x="0.0" y="725" width="393" height="135"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xei-4P-qeT">
+                                        <rect key="frame" x="174" y="5" width="44" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="22"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3C1-XL-lse">
+                                        <rect key="frame" x="174" y="5" width="44" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="chevron.down" catalog="system"/>
+                                        <connections>
+                                            <action selector="didTapToggleMenuButton:" destination="faL-wp-m99" eventType="touchUpInside" id="SJh-0D-Wfc"/>
+                                        </connections>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="MsY-Oh-4NQ">
+                                        <rect key="frame" x="30" y="61.666666666666629" width="333" height="44"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IFH-bh-nnu">
+                                                <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="44" id="bm6-so-NHe"/>
+                                                    <constraint firstAttribute="height" constant="44" id="evq-vn-ral"/>
+                                                </constraints>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="fb.icon"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="22"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TtT-hS-DQr">
+                                                <rect key="frame" x="96.333333333333329" y="0.0" width="43.999999999999986" height="44"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="g3n-Vq-I3u"/>
+                                                    <constraint firstAttribute="width" constant="44" id="ufI-Vy-ALD"/>
+                                                </constraints>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="twitter.icon"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rh4-Qw-hTZ">
+                                                <rect key="frame" x="192.66666666666666" y="0.0" width="44" height="44"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="KYB-Ue-Gw7"/>
+                                                    <constraint firstAttribute="width" constant="44" id="XQY-lc-NoR"/>
+                                                </constraints>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="linkedin.icon"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P51-YN-ZZw">
+                                                <rect key="frame" x="289" y="0.0" width="44" height="44"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="44" id="8xC-R5-N4Z"/>
+                                                    <constraint firstAttribute="height" constant="44" id="oAK-nw-C1w"/>
+                                                </constraints>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="skype.icon"/>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="rdG-Rf-zNl"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="135" id="Att-yC-cLE"/>
+                                    <constraint firstAttribute="trailing" secondItem="MsY-Oh-4NQ" secondAttribute="trailing" constant="30" id="KPx-cC-SZg"/>
+                                    <constraint firstItem="MsY-Oh-4NQ" firstAttribute="leading" secondItem="m6g-yY-zGK" secondAttribute="leading" constant="30" id="M6g-rB-BT0"/>
+                                    <constraint firstItem="MsY-Oh-4NQ" firstAttribute="centerY" secondItem="m6g-yY-zGK" secondAttribute="centerY" constant="16" id="OWo-Ia-h8z"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="mSE-pa-a5g"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="mSE-pa-a5g" firstAttribute="trailing" secondItem="hba-ER-Zzh" secondAttribute="trailing" id="10g-7p-eq5"/>
+                            <constraint firstAttribute="bottom" secondItem="hba-ER-Zzh" secondAttribute="bottom" id="Gkn-H2-DcL"/>
+                            <constraint firstItem="hba-ER-Zzh" firstAttribute="leading" secondItem="mSE-pa-a5g" secondAttribute="leading" id="Nb6-Wb-ZMr"/>
+                            <constraint firstAttribute="bottom" secondItem="m6g-yY-zGK" secondAttribute="bottom" constant="-69" id="Vpa-9D-ibt"/>
+                            <constraint firstItem="hba-ER-Zzh" firstAttribute="top" secondItem="L79-kh-EMt" secondAttribute="top" id="WCo-pI-Tmz"/>
+                            <constraint firstItem="m6g-yY-zGK" firstAttribute="trailing" secondItem="mSE-pa-a5g" secondAttribute="trailing" id="bZQ-tz-z9N"/>
+                            <constraint firstItem="m6g-yY-zGK" firstAttribute="leading" secondItem="mSE-pa-a5g" secondAttribute="leading" id="c1x-5Z-XwQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="darkFillView" destination="xei-4P-qeT" id="SJo-i4-6k4"/>
+                        <outlet property="menuView" destination="m6g-yY-zGK" id="EtD-Sl-Jf1"/>
+                        <outlet property="socialIcon1" destination="IFH-bh-nnu" id="hOn-yw-DJy"/>
+                        <outlet property="socialIcon2" destination="TtT-hS-DQr" id="JaD-gX-J7G"/>
+                        <outlet property="socialIcon3" destination="rh4-Qw-hTZ" id="S4E-58-hPB"/>
+                        <outlet property="socialIcon4" destination="P51-YN-ZZw" id="Z96-sO-Hf2"/>
+                        <outlet property="toggleMenuButton" destination="3C1-XL-lse" id="fUt-3l-xhN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Sj-gG-BnZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2472.5190839694656" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="chevron.down" catalog="system" width="128" height="70"/>
+        <image name="diniIn" width="335" height="507"/>
+        <image name="fb.icon" width="50" height="50"/>
+        <image name="linkedin.icon" width="48" height="48"/>
+        <image name="skype.icon" width="48" height="48"/>
+        <image name="twitter.icon" width="48" height="48"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
